@@ -146,6 +146,7 @@ void dadoUnArbol_SiQuieroRecorrerloInorden_PuedoHacerloCorrectamente(){
     size_t auxiliar= arbol_recorrido_inorden(arbol_,(void**)array, 0);
     pa2m_afirmar(auxiliar==0, "La cantidad de elementos guardados es 0 ya que el arbol no tenia elementos " );
     
+    
     int enteros[MAXIMO]={10,20,30,4,8,70,6,14,18,18};
     insertar_enteros(arbol_, enteros, MAXIMO);
     auxiliar= arbol_recorrido_inorden(arbol_,(void**)array, MAXIMO);
