@@ -155,7 +155,7 @@ void dadoUnArbol_SiQuieroRecorrerloInorden_PuedoHacerloCorrectamente(){
     pa2m_afirmar(*(int*)array[2]== enteros[4], "El elemento guardado en la posicion 2 es el esperado");
     pa2m_afirmar(*(int*)array[3]== enteros[0], "El elemento guardado en la posicion 3 es el esperado");
     pa2m_afirmar(*(int*)array[4]== enteros[7], "El elemento guardado en la posicion 4 es el esperado");
-    pa2m_afirmar(*(int*)array[5]== enteros[9], "El elemento guardado en la posicion 5 es el esperado");1
+    pa2m_afirmar(*(int*)array[5]== enteros[9], "El elemento guardado en la posicion 5 es el esperado");
     pa2m_afirmar(*(int*)array[6]== enteros[8], "El elemento guardado en la posicion 6 es el esperado");
     pa2m_afirmar(*(int*)array[7]== enteros[1], "El elemento guardado en la posicion 7 es el esperado");
     pa2m_afirmar(*(int*)array[8]== enteros[2], "El elemento guardado en la posicion 8 es el esperado");
