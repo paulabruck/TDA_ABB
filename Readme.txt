@@ -2,6 +2,7 @@
 *Un Readme.txt donde explique el TDA implementado. Explique qué es una árbol, árbol binario y árbol binario
 de búsqueda. Explique por qué es importante la distinción de cada uno de estos conceptos.
 
+
 Un arbol es una coleccion de nodos. Los nodos son los elementos o vertices del arbol.  Esta coleccion puede estar vacıa, o puede que consista
 de un nodo destacado, llamado raız, que puede tener 0 o varios sub-arboles no vacios conectados a la raiz , donde cada uno de ellos esta
 conectado a una raiz. Esta conexion que tiene el nodo raiz a a sus sub-arboles esta hecha por lo que se denomina el nodo hijo. Y a su vez

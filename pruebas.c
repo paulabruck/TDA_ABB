@@ -13,7 +13,7 @@ void dadoUnArbolInexistente_SiQuieroInsertarUnElemento_NoPuedoHacerlo(){
     int estado=0;
     estado= arbol_insertar(arbol_, (void*)1);
     pa2m_afirmar(!arbol_, "El arbol no existe.");
-    pa2m_afirmar(estado==0, "Dado un arbol inexistente no puedo insertar elementos.");
+    pa2m_afirmar(estado==-1, "Dado un arbol inexistente no puedo insertar elementos.");
 }
 void dadoUnArbol_SiQuieroInsertarUnElementoNulo_PuedoHacerlo(){
     abb_t * arbol_= arbol_crear(NULL, NULL);
@@ -114,11 +114,11 @@ void dadoUnArbol_SiQuieroConocerLaRaiz_PuedoHacerlo(){
     insertar_enteros(arbol_, enteros, MAXIMO);
     pa2m_afirmar(*(int*)arbol_raiz(arbol_)== enteros[0], "El elemento insertado en la raiz es el 10.");
     pa2m_afirmar(arbol_borrar(arbol_, &enteros[0])==0, "Puedo borrar la raiz de un arbol con 10 elementos");
-    pa2m_afirmar(*(int*)arbol_raiz(arbol_)== enteros[7], "La nueva raiz del arbol es el predecesor inorden(14) del elemento borrado.");
-    pa2m_afirmar( *(int*)arbol_->nodo_raiz->derecha->izquierda->elemento == enteros[8] , "El lugar donde estaba el predecesor inorden fue ocupado por el nodo correspondiente.");
+    pa2m_afirmar(*(int*)arbol_raiz(arbol_)== enteros[4], "La nueva raiz del arbol es el predecesor inorden(8) del elemento borrado.");
+    pa2m_afirmar( *(int*)arbol_->nodo_raiz->izquierda->derecha->elemento == enteros[6] , "El lugar donde estaba el predecesor inorden fue ocupado por el nodo correspondiente.");
     pa2m_afirmar(*(int*)arbol_raiz(arbol_)!= enteros[1], "El segundo elemento insertado no es la raiz del arbol.");
-    arbol_borrar(arbol_, &enteros[0]);
-    pa2m_afirmar(*(int*)arbol_raiz(arbol_)== enteros[7], "Si borro la raiz, la nueva raiz es el predecesor inorden");
+    pa2m_afirmar(arbol_borrar(arbol_, &enteros[4])==0, "Puedo borrar la raiz de un arbol con 9 elementos");
+    pa2m_afirmar(*(int*)arbol_raiz(arbol_)== enteros[6], "Si borro la raiz, la nueva raiz es el predecesor inorden");
     arbol_destruir(arbol_);
 }
 void dadoUnArbol_SiEstaVacio_MeDevuelveQueLoEsta(){
